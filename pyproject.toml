@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cft-test-work"
+version = "0.1.0"
+description = ""
+authors = ["Fedor S. <fedor.shtab@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cft_test_work"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlalchemy = "^2.0.15"
+fastapi = {extras = ["all"], version = "^0.95.2"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.6"
+python-dotenv= '*'
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+alembic= '*'
+asyncpg= '*'
+fastapi-users = {extras = ["all"], version = '*'}
+fastapi-users-db-sqlalchemy = "^6.0.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
